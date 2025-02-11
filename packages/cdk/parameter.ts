@@ -17,6 +17,34 @@ const envs: Record<string, Partial<StackInput>> = {
   // },
   dev: {
     // 開発環境のパラメータ
+    ragKnowledgeBaseEnabled: true,
+    ragKnowledgeBaseStandbyReplicas: false,
+    ragKnowledgeBaseAdvancedParsing: true,
+    ragKnowledgeBaseAdvancedParsingModelId: 'anthropic.claude-3-sonnet-20240229-v1:0',
+    embeddingModelId: 'amazon.titan-embed-text-v2:0',
+    agentEnabled: true,
+    modelRegion: 'us-east-1',
+    modelIds: [
+      "anthropic.claude-3-5-sonnet-20241022-v2:0",
+      "anthropic.claude-3-5-sonnet-20240620-v1:0",
+      "anthropic.claude-3-sonnet-20240229-v1:0",
+      "anthropic.claude-3-haiku-20240307-v1:0",
+      "amazon.nova-pro-v1:0",
+      "amazon.nova-lite-v1:0",
+      "amazon.nova-micro-v1:0",
+      "amazon.titan-text-premier-v1:0",
+      "meta.llama3-70b-instruct-v1:0",
+      "meta.llama3-8b-instruct-v1:0",
+      "cohere.command-r-plus-v1:0",
+      "cohere.command-r-v1:0",
+      "mistral.mistral-large-2402-v1:0"
+    ],
+    imageGenerationModelIds: [
+      "amazon.nova-canvas-v1:0",
+      "amazon.titan-image-generator-v2:0",
+      "amazon.titan-image-generator-v1",
+      "stability.stable-diffusion-xl-v1"
+    ],
   },
   staging: {
     // ステージング環境のパラメータ
