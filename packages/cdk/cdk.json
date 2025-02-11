@@ -24,9 +24,9 @@
     "kendraIndexScheduleEnabled": false,
     "kendraIndexScheduleCreateCron": null,
     "kendraIndexScheduleDeleteCron": null,
-    "ragKnowledgeBaseEnabled": false,
+    "ragKnowledgeBaseEnabled": true,
     "ragKnowledgeBaseStandbyReplicas": false,
-    "ragKnowledgeBaseAdvancedParsing": false,
+    "ragKnowledgeBaseAdvancedParsing": true,
     "ragKnowledgeBaseAdvancedParsingModelId": "anthropic.claude-3-sonnet-20240229-v1:0",
     "embeddingModelId": "amazon.titan-embed-text-v2:0",
     "rerankingModelId": null,
@@ -46,7 +46,10 @@
       "us.amazon.nova-micro-v1:0"
     ],
     "imageGenerationModelIds": [
-      "amazon.nova-canvas-v1:0"
+      "amazon.nova-canvas-v1:0",
+      "amazon.titan-image-generator-v2:0",
+      "amazon.titan-image-generator-v1",
+      "stability.stable-diffusion-xl-v1"
     ],
     "endpointNames": [],
     "agentEnabled": false,
